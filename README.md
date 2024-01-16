@@ -1,7 +1,7 @@
 # Concealed object detection using terahertz video
 In this project, from a publically available terahertz video dataset, using the YOLOv5m, a model is created to detect concealed objects. 
-![dataset](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/ed5efcd3-c5ff-429a-a55d-c8bf5885e88a)
-Hyperparameter tuning helps in getting better accuracy in object detection.
+<img src="[https://github.com/favicon.ico](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/ed5efcd3-c5ff-429a-a55d-c8bf5885e88a)" width="48">
+![dataset]()Hyperparameter tuning helps in getting better accuracy in object detection.
 YOLOv5m structure
 ![yolov5m](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/265a81d0-e913-4b1a-a721-60fdab2f920c)
 

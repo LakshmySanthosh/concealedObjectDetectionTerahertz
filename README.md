@@ -5,7 +5,7 @@ In this project, from a publically available terahertz video dataset, using the 
 
 **Dataset**
 The dataset consists of terahertz videos obtained from a publically available terahertz dataset by [https://www.fullvision.ru/](https://www.fullvision.ru/). It consists of 22 classes of images comprising of dangerous(knife, pistol, AK, etc) and non-dangerous(A4paper, cigarettebox, etc). We are using this dataset by converting it into frames. Some of the classes of the dataset are shown below.
-![dataset](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/1db3bbb7-f168-444a-a0ba-78489f940a4a){:width="50%"}
+<img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/1db3bbb7-f168-444a-a0ba-78489f940a4a" width="50%">
 
 We did some data augmentations on the dataset using [https://app.roboflow.com/](https://app.roboflow.com/), a sample of the augmented data is shown below
 ![1234](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/5fe5c9f0-a478-4a20-834d-7c92a0b8db04)

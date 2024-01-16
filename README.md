@@ -1,14 +1,14 @@
 # Concealed object detection using terahertz video
 
-In this project, from a publically available terahertz video dataset, using the YOLOv5m, a model is created to detect concealed objects. Hyperparameter tuning helps in getting better accuracy in object detection. To tackle the problem of overfitting, we use data augmentations on the dataset.
+This project focuses on concealed object detection utilizing terahertz video data. Employing the YOLOv5m model, we have crafted a sophisticated system to identify concealed objects. Rigorous hyperparameter tuning enhances the model's accuracy in object detection, while strategically applied data augmentations mitigate the risk of overfitting.
 
 
 **Dataset**
-The dataset consists of terahertz videos obtained from a publically available terahertz dataset by [https://www.fullvision.ru/](https://www.fullvision.ru/). It consists of 22 classes of images comprising of dangerous(knife, pistol, AK, etc) and non-dangerous(A4paper, cigarettebox, etc). We are using this dataset by converting it into frames. Some of the classes of the dataset are shown below.
+Our dataset comprises terahertz videos sourced from a publicly available collection by [https://www.fullvision.ru/](https://www.fullvision.ru/). Encompassing 22 distinct classes, the dataset encompasses both dangerous (e.g., knife, pistol, AK) and non-dangerous items (e.g., A4 paper, cigarette box). We have converted this dataset into frames for comprehensive analysis. A glimpse of some dataset classes is displayed below:
 
 <img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/1db3bbb7-f168-444a-a0ba-78489f940a4a" width="50%">
 
-We did some data augmentations on the dataset using [https://app.roboflow.com/](https://app.roboflow.com/), a sample of the augmented data is shown below
+To further enhance the dataset, we applied data augmentations using [https://app.roboflow.com/](https://app.roboflow.com/). A sample showcasing the augmented data is presented below:
 
 <img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/5fe5c9f0-a478-4a20-834d-7c92a0b8db04" width="30%">
 
@@ -22,9 +22,6 @@ The YOLOv5m model excels in real-time concealed object detection. Its architectu
 The stem preprocesses input images, and the backbone uses CSPDarkNet53 with unique features for robust pattern capture. The neck employs PANet for accurate feature amalgamation, enhancing detection. The head predicts bounding boxes, objectness scores, and class probabilities, ensuring comprehensive detection. This multi-scale approach adapts to various object sizes, making YOLOv5m versatile in concealed object detection scenarios.
 
 **Structure of YOLOv5m**
+The architecture of the YOLOv5m model is illustrated below:
 
 <img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/265a81d0-e913-4b1a-a721-60fdab2f920c" width="50%">
-
-
-
-

@@ -8,7 +8,7 @@ The dataset consists of terahertz videos obtained from a publically available te
 <img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/1db3bbb7-f168-444a-a0ba-78489f940a4a" width="50%">
 
 We did some data augmentations on the dataset using [https://app.roboflow.com/](https://app.roboflow.com/), a sample of the augmented data is shown below
-![1234](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/5fe5c9f0-a478-4a20-834d-7c92a0b8db04)
+<img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/5fe5c9f0-a478-4a20-834d-7c92a0b8db04" width="50%">
 
 
 **YOLOv5m**
@@ -20,7 +20,8 @@ The YOLOv5m model excels in real-time concealed object detection. Its architectu
 The stem preprocesses input images, and the backbone uses CSPDarkNet53 with unique features for robust pattern capture. The neck employs PANet for accurate feature amalgamation, enhancing detection. The head predicts bounding boxes, objectness scores, and class probabilities, ensuring comprehensive detection. This multi-scale approach adapts to various object sizes, making YOLOv5m versatile in concealed object detection scenarios.
 
 **Structure of YOLOv5m**
-![yolov5m](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/265a81d0-e913-4b1a-a721-60fdab2f920c){:width="50%"}
+<img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/265a81d0-e913-4b1a-a721-60fdab2f920c" width="50%">
+
 
 
 

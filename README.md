@@ -7,7 +7,7 @@ Our dataset comprises terahertz videos sourced from a publicly available collect
 
 <img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/1db3bbb7-f168-444a-a0ba-78489f940a4a" width="50%">
 
-To further enhance the dataset, we applied data augmentations using [https://app.roboflow.com/](https://app.roboflow.com/). A sample showcasing the augmented data is presented below:
+To further enhance the dataset, data augmentations are applied. A sample showcasing the augmented data is presented below:
 
 <img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/5fe5c9f0-a478-4a20-834d-7c92a0b8db04" width="30%">
 
@@ -40,5 +40,17 @@ The architecture of the YOLOv8m model is illustrated below:
 
 ![yolov8m_original_arch](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/26577fe2-ee10-464e-8dac-0ac57374e434)
 
-  
+  After training the YOLOv5 and YOLOv8 models using terahertz data, good accuracy and training speed is obtained. The YOLOv5 model runs faster than the YOLOv8 model. Then further, after replacing the Conv layers in the model by custom DWSConv(depth-wise separable convolution) and DWConv(depth-wise convolution), a decrease in the number of paramenters can be observed. The percentage of ddecrease in parameters is given in the table below. Percentage of decrease in parameters is less in YOLOv8 as compared to YOLOv5.
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/08227c6f-3ce3-4b64-9df3-4c13178e993e)
+
+Results of the training are given below
+
+YOLOv5 results
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/6fce588c-b200-40ee-a846-d4ad11b383d0)
+
+
+YOLOv8 results
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/cc8364b5-39fc-4a17-bd34-61b6a2aae712)
+
+Overall the new depth-wise and depth-wise separable YOLO models perform well on terahertz dataset.
 

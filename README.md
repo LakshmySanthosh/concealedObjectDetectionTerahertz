@@ -43,17 +43,18 @@ The architecture of the YOLOv8m model is illustrated below:
 
   After training the YOLOv5 and YOLOv8 models using terahertz data, good accuracy and training speed is obtained. The YOLOv5 model runs faster than the YOLOv8 model. Then further, after replacing the Conv layers in the model by custom DWSConv(depth-wise separable convolution) and DWConv(depth-wise convolution), a decrease in the number of paramenters can be observed. The percentage of ddecrease in parameters is given in the table below. Percentage of decrease in parameters is less in YOLOv8 as compared to YOLOv5.
   
-![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/08227c6f-3ce3-4b64-9df3-4c13178e993e)
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/cb30f6e9-af7e-4efc-bff9-b8303d206950)
 
-Results of the training are given below
+
+Results are given below
 
 YOLOv5 results
-![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/52d9abcd-7671-4b14-ab1f-bc795ee19ae9)
 
-
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/0eed82f7-d2d8-4ace-8b61-e3d88f4c8ffb)
 
 YOLOv8 results
-![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/b2c4b949-28bd-4c62-9904-3ed8bb63eeaf)
+
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/4c8d7344-9cac-4238-98b3-7f867c8d06b6)
 
 
 - Evaluation matrices like precision, recall and mAP has slight increase or remained same in all the cases.

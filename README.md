@@ -22,7 +22,7 @@ The backbone takes in the input tensor, uses CSPDarkNet53 with unique features f
 **Structure of YOLOv5m**
 The architecture of the YOLOv5m model is illustrated below:
 
-![yolov5m_original_arch](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/4b7d9617-197d-4102-9b9a-6193d7a6cf18)
+<img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/4b7d9617-197d-4102-9b9a-6193d7a6cf18" alt="yolov8m_original_arch" width="500">
 
 **YOLOv8m**
 Similar to the YOLOv5 architecture, the YOLOv8m architecture also includes:
@@ -38,19 +38,28 @@ The backbone takes in the input tensor, uses CSPDarkNet53 with unique features f
 **Structure of YOLOv8m**
 The architecture of the YOLOv8m model is illustrated below:
 
-![yolov8m_original_arch](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/26577fe2-ee10-464e-8dac-0ac57374e434)
+<img src="https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/26577fe2-ee10-464e-8dac-0ac57374e434" alt="yolov8m_original_arch" width="500">
+
 
   After training the YOLOv5 and YOLOv8 models using terahertz data, good accuracy and training speed is obtained. The YOLOv5 model runs faster than the YOLOv8 model. Then further, after replacing the Conv layers in the model by custom DWSConv(depth-wise separable convolution) and DWConv(depth-wise convolution), a decrease in the number of paramenters can be observed. The percentage of ddecrease in parameters is given in the table below. Percentage of decrease in parameters is less in YOLOv8 as compared to YOLOv5.
+  
 ![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/08227c6f-3ce3-4b64-9df3-4c13178e993e)
 
 Results of the training are given below
 
 YOLOv5 results
-![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/6fce588c-b200-40ee-a846-d4ad11b383d0)
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/52d9abcd-7671-4b14-ab1f-bc795ee19ae9)
+
 
 
 YOLOv8 results
-![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/cc8364b5-39fc-4a17-bd34-61b6a2aae712)
+![image](https://github.com/LakshmySanthosh/concealedObjectDetectionTerahertz/assets/121610033/b2c4b949-28bd-4c62-9904-3ed8bb63eeaf)
 
+
+- Evaluation matrices like precision, recall and mAP has slight increase or remained same in all the cases.
+- The number of parameters has decreased significantly in modified models. In depthwise models, the decrease in number of parameters are 26% and 17% in YOLOv5 and YOLOv8 respectively.
+- In case of Depthwise-Separable models, the decrease in number of parameters are 21% and 15% in YOLOv5 and YOLOv8 respectively.
+- From all all the models, we can come to a conclusion that the Depthwise and Depthwise-Separable YOLO models give same results as that of the original model, with significantly less computational complexity.
+- Hence, these new models can be run on devices which has less computational complexity.
 Overall the new depth-wise and depth-wise separable YOLO models perform well on terahertz dataset.
 
